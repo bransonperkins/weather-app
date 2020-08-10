@@ -17,7 +17,7 @@ public class WeatherService {
     @Autowired
     private ZipCodeRepository zipCodeRepository;
 
-    @Value("${api_key}")
+    @Value(value = "${api_key}")
     private String apiKey;
 
     public List<ZipCode> getRecentSearches() {
